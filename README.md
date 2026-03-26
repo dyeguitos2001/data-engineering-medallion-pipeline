@@ -63,12 +63,12 @@ data-engineering-junior-project/
 ---
 
 ## ▶️ Como executar
-
+```text
 python -m venv .venv  
 .venv\Scripts\activate  
 pip install -r requirements.txt  
 python -m src.pipeline  
-
+```
 ---
 
 ## 📊 Saída do pipeline
@@ -82,9 +82,9 @@ O pipeline gera datasets em diferentes estágios:
 ---
 
 ## 🧪 Testes
-
+```text
 pytest
-
+```
 ---
 
 ## 🔍 Observações
