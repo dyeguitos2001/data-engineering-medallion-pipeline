@@ -30,7 +30,7 @@ O pipeline segue o padrão de camadas:
 ---
 
 ## 📂 Estrutura do projeto
-
+```text
 data-engineering-junior-project/
 ├── data/
 │   ├── raw/orders.csv
@@ -49,7 +49,7 @@ data-engineering-junior-project/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## ⚙️ Tecnologias utilizadas
