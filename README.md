@@ -1,17 +1,36 @@
-# Projeto de Engenharia de Dados Júnior
+# Data Engineering Pipeline Project
 
-Projeto de portfólio construído para demonstrar fundamentos de Engenharia de Dados alinhados a vagas de nível júnior, com foco em ingestão, transformação, qualidade e disponibilização de dados em arquitetura Medallion.
+Projeto de engenharia de dados desenvolvido para demonstrar a construção de pipelines completos, desde a ingestão até a disponibilização de dados para consumo analítico.
 
-## O que este projeto demonstra
-- Python para manipulação de dados
-- SQL para consumo analítico
-- pipeline em camadas Bronze / Silver / Gold
-- validações simples de qualidade
-- logging, organização e documentação
-- estrutura pronta para GitHub
+O projeto simula um fluxo de dados de pedidos, aplicando transformações, validações e organização em múltiplas camadas, seguindo boas práticas utilizadas em ambientes modernos de dados.
 
-## Estrutura
-```text
+---
+
+## 📌 Principais conceitos aplicados
+
+- Ingestão e processamento de dados
+- Transformação e padronização com Python
+- Organização em camadas (Bronze, Silver e Gold)
+- Validação de qualidade de dados
+- Estruturação para consumo analítico
+- Logging e organização modular do código
+- Versionamento com Git
+
+---
+
+## 🏗️ Arquitetura
+
+O pipeline segue o padrão de camadas:
+
+- Raw: dados brutos de entrada  
+- Bronze: dados ingeridos sem alterações estruturais  
+- Silver: dados tratados, limpos e padronizados  
+- Gold: dados agregados e prontos para análise  
+
+---
+
+## 📂 Estrutura do projeto
+
 data-engineering-junior-project/
 ├── data/
 │   ├── raw/orders.csv
@@ -30,28 +49,56 @@ data-engineering-junior-project/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-```
 
-## Como executar
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python -m src.pipeline
-```
+---
 
-## Destaque para currículo
-**Projeto de Pipeline de Dados com Python, SQL e arquitetura Medallion**
-- Desenvolvi pipeline de ingestão, transformação e disponibilização de dados em camadas Bronze, Silver e Gold.
-- Implementei tratamento, padronização e validações de qualidade de dados com Python.
-- Estruturei saída analítica em CSV e consultas SQL para suporte a dashboards e análises.
-- Organizei o projeto com logs, testes e documentação técnica para publicação em GitHub.
+## ⚙️ Tecnologias utilizadas
 
-## Relação com a vaga
-Mesmo rodando localmente com CSV, o projeto replica conceitos compatíveis com vagas de Engenharia de Dados Júnior:
-- arquitetura Medallion
-- troubleshooting básico
-- SQL para analytics
-- Python para dados
-- documentação de pipeline
-- base para Databricks / Spark / Delta
+- Python
+- Pandas
+- SQL (SQLite)
+- Pytest
+- Git
+
+---
+
+## ▶️ Como executar
+
+python -m venv .venv  
+.venv\Scripts\activate  
+pip install -r requirements.txt  
+python -m src.pipeline  
+
+---
+
+## 📊 Saída do pipeline
+
+O pipeline gera datasets em diferentes estágios:
+
+- bronze: dados brutos com controle de ingestão  
+- silver: dados tratados e enriquecidos  
+- gold: dados agregados para análise  
+
+---
+
+## 🧪 Testes
+
+pytest
+
+---
+
+## 🔍 Observações
+
+Este projeto foi estruturado com foco em clareza, organização e boas práticas, podendo ser facilmente evoluído para cenários mais complexos, como:
+
+- integração com APIs  
+- processamento distribuído  
+- orquestração de pipelines  
+- uso de data lakes  
+- integração com ferramentas de BI  
+
+---
+
+## 👤 Autor
+
+Dyego Simões Cabral Metelo
